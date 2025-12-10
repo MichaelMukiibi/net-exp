@@ -1,0 +1,9 @@
+[functions]
+directory = "src"
+node_version = "22"
+
+[[redirects]]
+from = "/api"
+
+to = "src/index"
+status = 200

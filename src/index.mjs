@@ -12,11 +12,11 @@ const PRODUCTS = [
 
 app.use(express.json())
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   res.status(200).send('Hello, world')
 })
 
-app.route('/products')
+app.route('/api/products')
   .get((req, res) => {
     return res.status(200).json(PRODUCTS)
   })
